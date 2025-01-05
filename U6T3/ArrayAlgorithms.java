@@ -1,6 +1,5 @@
 package U6T3;
 public class ArrayAlgorithms {
-
   public static String longestString(String[] stringList) {
     String longestStr = stringList[0];
     for (String str: stringList) {
@@ -38,11 +37,11 @@ public class ArrayAlgorithms {
     return count;
   }
 
-  // public static void makeUppercase(String[] wordList) {
-  //   for (int i = 0; i < wordList.length; i++) {
-  //     wordList[i] = wordList[i].toUpperCase(); 
-  //   }
-  // }
+  public static void makeUppercase(String[] wordList) {
+    for (int i = 0; i < wordList.length; i++) {
+      wordList[i] = wordList[i].toUpperCase(); 
+    }
+  }
 
   public static int[] arrayMaximums(int[] intArr1, int[] intArr2) {
     int highArray [] = new int [intArr1.length]; 
@@ -82,16 +81,5 @@ public class ArrayAlgorithms {
     }
   } 
   return longestStreak; 
-} 
-   
-public static void makeUppercase(String[] wordList) {
-  String[] upperStrs = new String[wordList.length];
-  
-  for (int i = 0; i < wordList.length; i++) {
-      upperStrs[i] = wordList[i].toUpperCase();
-  }
-
-  // set wordList to the newList
-  wordList = upperStrs; 
 }
 }
